@@ -19,7 +19,13 @@
 // }
 // console.log(add(7, 2));
 
-const add = (x, y) => x + y;
+// const add = (x, y) => x + y;
 
-console.log(add(7, 2));
+// console.log(add(7, 2));
+let obj = {
+  welcome(name){
+    console.log(`hello ${name}`)
+  }
+}
 
+obj.welcome("Youssef");
