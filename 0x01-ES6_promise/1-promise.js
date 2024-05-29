@@ -3,7 +3,7 @@ export default function getFullResponseFromAPI(success) {
     let statusObjectToBeResolved = {
       status: 200,
       body: 'Success',
-    };
+    }
     if (success === true)
     {
       resolve(statusObjectToBeResolved);
