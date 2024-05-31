@@ -5,7 +5,7 @@ export default class Pricing {
     if (typeof amount !== 'number') {
       throw new TypeError('Amount must be a number');
     }
-    if (typeof currency !== 'object') {
+    if (!(currency instanceof Currency)) {
       throw new TypeError('Currency must be an object of a class Currency');
     }
 
@@ -30,7 +30,7 @@ export default class Pricing {
   }
 
   set currency(newCurrency) {
-    if (typeof newCurrency === 'object') {
+    if (newCurrency instanceof Currency) {
       this._currency = newCurrency;
     } else {
       throw new TypeError('Currency must be an object of a class Currency');
