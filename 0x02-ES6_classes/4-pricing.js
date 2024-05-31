@@ -31,7 +31,7 @@ export default class Pricing {
 
   set currency(newCurrency) {
     if (typeof newCurrency === 'object') {
-      this._amount = newCurrency;
+      this._currency = newCurrency;
     } else {
       throw new TypeError('Currency must be an object of a class Currency');
     }
