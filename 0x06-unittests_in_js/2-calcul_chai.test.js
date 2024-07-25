@@ -1,6 +1,6 @@
-const calculateNumber = require('./1-calcul');
-const { describe } = require('mocha');
+const calculateNumber = require('./2-calcul_chai');
 const expect = require('chai').expect
+const { describe } = require('mocha');
 
 describe('calculateNumber', function() {
   it('should return the sum of rounded numbers', function() {
